@@ -1,0 +1,7 @@
+plugin.tx_gjoexdatatypes {
+	view {
+		templateRootPath = EXT:gjo_ex_datatypes/Resources/Private/Templates/
+		partialRootPath = EXT:gjo_ex_datatypes/Resources/Private/Partials/
+		layoutRootPath = EXT:gjo_ex_datatypes/Resources/Private/Layouts/
+	}
+}

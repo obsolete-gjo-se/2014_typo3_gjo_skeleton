@@ -1,0 +1,86 @@
+<div class="form-group">
+    <label for="stringWithoutBreak" class="col-sm-2 control-label" >stringWithoutBreak</label>
+    <div class="col-sm-10">
+        <f:form.textfield name="stringWithoutBreak" property="stringWithoutBreak" required="1" maxlength="30" class="form-control" />
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="stringWithBreak" class="col-sm-2 control-label" >stringWithBreak</label>
+    <div class="col-sm-10">
+        <f:form.textarea name="stringWithBreak" property="stringWithBreak" class="form-control" additionalAttributes="{maxlength: '100'}"/>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="password" class="col-sm-2 control-label">password</label>
+    <div class="col-sm-10">
+        <f:form.password name="password" property="password"  maxlength="20" class="form-control" />
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="numberInteger" class="col-sm-2 control-label">numberInteger</label>
+    <div class="col-sm-10">
+        <f:form.textfield name="numberInteger" property="numberInteger" maxlength="6" class="form-control" />
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="selectSingle" class="col-sm-2 control-label">selectSingle</label>
+    <div class="col-sm-10">
+        <f:form.select name="selectSingle" property="selectSingle"
+                options="{
+                    0: '-- Bitte wählen --',
+                    1: 'Januar',
+                    2: 'Februar',
+                    3: 'März'
+                    }"
+                class="form-control" />
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="selectSingleDb" class="col-sm-2 control-label">selectSingleDb</label>
+    <div class="col-sm-10">
+        <f:form.select
+                name="selectSingleDb"
+                property="selectSingleDb"
+                options="{months}"
+                optionLabelField="monthString"
+                prependOptionLabel="-- Bitte Wählen --"
+                prependOptionValue="0"
+                class="form-control" />
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="checkboxSingle" class="col-sm-2 control-label">checkboxSingle</label>
+    <div class="col-sm-10">
+        <label class="checkbox">
+            <f:form.checkbox
+                    name="checkboxSingle"
+                    property="checkboxSingle"
+                    value="1"
+                    checked="{f:if(condition: '{dataType.checkboxSingle} == 1', then: 'checked')}"
+            />JA
+        </label>
+    </div>
+</div>
+
+<div class="form-group">
+    <label for="radioMulti" class="col-sm-2 control-label">radioMulti</label>
+    <div class="col-sm-10">
+        <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-default {f:if(condition: '{dataType.radioMulti} == 1', then: 'active')}">
+                <f:form.radio property="radioMulti" value="1"  />Januar
+            </label>
+            <label class="btn btn-default {f:if(condition: '{dataType.radioMulti} == 2', then: 'active')}">
+                <f:form.radio property="radioMulti" value="2" />Februar
+            </label>
+            <label class="btn btn-default {f:if(condition: '{dataType.radioMulti} == 3', then: 'active')}">
+                <f:form.radio property="radioMulti" value="3" />März
+            </label>
+        </div>
+    </div>
+</div>

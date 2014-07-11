@@ -1,0 +1,8 @@
+plugin.tx_gjoexdatatypes {
+	view {
+		templateRootPath = {$plugin.tx_gjoexdatatypes.view.templateRootPath}
+		partialRootPath = {$plugin.tx_gjoexdatatypes.view.partialRootPath}
+		layoutRootPath = {$plugin.tx_gjoexdatatypes.view.layoutRootPath}
+	}
+}
+

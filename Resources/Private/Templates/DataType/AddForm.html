@@ -1,0 +1,17 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+
+    <h3>Table: tx_gjoexdatatypes_domain_model_datatype</h3>
+
+    <f:render partial="FormErrors" arguments="{object:DataType}" />
+
+    <f:form action="add" name="addForm" class="form-horizontal" additionalAttributes="{role: 'form'}">
+
+        <f:render partial="DataType/FormFields" arguments="{_all}" />
+
+        <f:form.submit value="Add DataType Example"/>
+
+    </f:form>
+
+</f:section>
