@@ -1,28 +1,33 @@
 <?php
 
+/*************************************************************
+ * Extension Manager config file for ext "gjo_skeleton". *
+ *************************************************************
+ */
+
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'gjo_skeleton',
     'description' => 'gjo_skeleton',
-    'category' => '',
+    'category' => 'misc',
     'author' => 'Gregory Jo',
     'author_email' => 'gregor.jo@gjo-se.com',
     'author_company' => 'gjo-se',
-    'shy' => '0',
+	'shy' => 0,
+	'version' => '2.0.0',
     'priority' => '',
-    'module' => '',
     'state' => 'alpha',
-    'internal' => '',
-    'uploadfolder' => '0',
+    'uploadfolder' => 0,
     'createDirs' => '',
     'modify_tables' => '',
-    'clearCacheOnLoad' => 1,
     'lockType' => '',
-    'version' => '0.1.0',
+    'clearCacheOnLoad' => 1,
     'constraints' => array(
         'depends' => array(
-            'typo3' => '6.2-6.2.99'
+            'typo3' => '6.2.0-6.2.99',
         ),
-        'conflicts' => array(),
-        'suggests' => array(),
+        'conflicts' => array(
+        ),
+        'suggests' => array(
+        ),
     ),
 );
