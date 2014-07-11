@@ -1,19 +1,19 @@
 <?php
 
 /*************************************************************
- * Extension Manager config file for ext "gjo_ex_datatypes". *
+ * Extension Manager config file for ext "gjo_skeleton". *
  *************************************************************
  */
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'data handling example',
-	'description' => 'Detailed data-handling - Backend & Frontend (Extbase/Fluid)',
-    'category' => 'example',
-    'author' => 'gregory jo',
-    'author_email' => 'gregory.jo@gjo-se.com',
+    'title' => 'gjo_skeleton',
+    'description' => 'gjo_skeleton',
+    'category' => 'misc',
+    'author' => 'Gregory Jo',
+    'author_email' => 'gregor.jo@gjo-se.com',
     'author_company' => 'gjo-se',
 	'shy' => 0,
-	'version' => '1.0.0',
+	'version' => '2.0.0',
     'priority' => '',
     'state' => 'alpha',
     'uploadfolder' => 0,

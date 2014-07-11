@@ -6,7 +6,7 @@
 
         <thead>
         <tr class="warning">
-            <td colspan="6">Table: tx_gjoexdatatypes_domain_model_datatype ({dataTypes -> f:count()})</td>
+            <td colspan="6">Table: tx_gjoskeleton_domain_model_skeleton ({skeleton -> f:count()})</td>
         </tr>
         <tr>
             <th><f:link.action action="addForm"><span class="glyphicon glyphicon-plus"></span></f:link.action>
@@ -25,24 +25,24 @@
         </thead>
 
         <tbody>
-        <f:for each="{dataTypes}" as="dataTypeValue">
+        <f:for each="{skeleton}" as="skeletonValue">
             <tr>
                 <td>
                 </td>
                 <td>
-                    {dataTypeValue.uid}
+                    {skeletonValue.uid}
                 </td>
                 <td>
-                    {dataTypeValue.stringWithoutBreak}
+                    {skeletonValue.stringWithoutBreak}
                 </td>
                 <td>
-                    <f:link.action action="show" arguments="{dataType : dataTypeValue}"><span class="glyphicon glyphicon-info-sign"></span></f:link.action>
+                    <f:link.action action="show" arguments="{skeleton : skeletonValue}"><span class="glyphicon glyphicon-info-sign"></span></f:link.action>
                 </td>
                 <td>
-                    <f:link.action action="updateForm" arguments="{dataType : dataTypeValue}"><span class="glyphicon glyphicon-pencil"></span></f:link.action>
+                    <f:link.action action="updateForm" arguments="{skeleton : skeletonValue}"><span class="glyphicon glyphicon-pencil"></span></f:link.action>
                 </td>
                 <td>
-                    <f:link.action action="remove" arguments="{dataType : dataTypeValue}"><span class="glyphicon glyphicon-trash"></span></f:link.action>
+                    <f:link.action action="remove" arguments="{skeleton : skeletonValue}"><span class="glyphicon glyphicon-trash"></span></f:link.action>
                 </td>
             </tr>
         </f:for>

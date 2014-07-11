@@ -2,13 +2,12 @@
 if (!defined ('TYPO3_MODE')) die ('Access denied.');
 
 \TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
-    'Gjo.' .
-    $_EXTKEY,
-    'ExDataTypes',
+    'Gjo.' . $_EXTKEY,
+    'Skeleton',
     array(
-        'DataType' => 'findAll, show, addForm, add, updateForm, update, remove'
+        'Skeleton' => 'findAll, show, addForm, add, updateForm, update, remove'
     ),
     array(
-        'DataType' => 'findAll, show, addForm, add, updateForm, update, remove'
+        'Skeleton' => 'findAll, show, addForm, add, updateForm, update, remove'
     )
 );
